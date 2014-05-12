@@ -742,9 +742,25 @@ doctorArray.reduce(function(x, y){
 // console.log(doctorArray(doctors, null, 4));
 
 
+//Works
+arr = [{x:1},{x:2},{x:4}]
 
+arr = [1,2,4]
+arr.reduce(function(a,b){return a + b, console.log(a + b)});
 
+//Doesn't work
 
+var doctorArray = [
+    { doctorNumber: "#9",  playedBy: "Christopher Eccleston", yearsPlayed: 1 },
+    { doctorNumber: "#10", playedBy: "David Tennant",         yearsPlayed: 6 },
+    { doctorNumber: "#11", playedBy: "Matt Smith",            yearsPlayed: 4 },
+    { doctorNumber: "#12", playedBy: "Peter Capaldi",         yearsPlayed: 1 }
+]
+
+doctorArray.reduce(function(a,b){
+	// return {yearsPlayed: a.yearsPlayed + b.yearsPlayed};
+	console.log({yearsPlayed: a.yearsPlayed + b.yearsPlayed});
+});
 
 
 
